@@ -27,7 +27,7 @@ const useStorage = (file, collection) => {
 
         return () => uploadTask.cancel();;
 
-    }, [file]);
+    }, [file, collection]);
 
     return { progress, url, error };
 };
